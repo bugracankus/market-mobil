@@ -5,7 +5,7 @@ import { StyleSheet, View, Text } from "react-native";
 const LoginPage: React.FC = () => {
     return (
         <View>
-            <Text>market mobil app</Text>
+            <Text>market mobil </Text>
         </View>
     )
 }
