@@ -1,16 +1,14 @@
 import React from "react";
-import { StyleSheet, View, Text, ImageBackground, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, View, Text, ImageBackground, Image, TextInput, TouchableOpacity } from "react-native";
 import Layout from "../constants/Layout";
 import { useNavigation } from "@react-navigation/native";
-import { HStack, NativeBaseProvider, VStack } from "native-base";
-import { TextInput } from "react-native-gesture-handler";
+import { NativeBaseProvider, HStack, VStack } from "native-base";
 import ButtonDesign from "../components/ButtonDesign";
 import HomePage from "./HomePage";
+// kayıt ol 
 
-
-const LoginPage: React.FC = () => {
+const SignUpPage: React.FC = () => {
     const navigation: any = useNavigation();
-
     return (
         <NativeBaseProvider>
             <View style={styles.container}>
@@ -22,15 +20,19 @@ const LoginPage: React.FC = () => {
                                 style={styles.logo}
                                 alt=""
                             />
-                            <Text style={styles.txt}>Loging</Text>
-                            <Text style={styles.cText}>Enter your emails and password</Text>
+                            <Text style={styles.txt}>Sign Up</Text>
+                            <Text style={styles.cText}>Enter your credentials to continue</Text>
                             <TextInput
-                                placeholder="E-Mail"
+                                placeholder="User Name"
                                 style={styles.input}
                             />
                             <TextInput
+                                placeholder="E-Mail"
+                                style={[styles.input, { marginTop: 45 }]}
+                            />
+                             <TextInput
                                 placeholder="Password"
-                                style={[styles.input, { marginTop: 65 }]}
+                                style={[styles.input, { marginTop: 45 }]}
                             />
                         </VStack>
                         <View style={{ alignItems: "center", marginTop: 60 }}>
@@ -42,10 +44,10 @@ const LoginPage: React.FC = () => {
                             />
                         </View>
                         <View>
-                            <HStack style={{justifyContent:"center", alignItems:"center", marginTop:20}}>
-                                <Text style={styles.sText}>Don’t have an account? </Text>
-                                <TouchableOpacity onPress={() => navigation.navigate("SignInPage")}>
-                                    <Text style={[styles.sText,{color:"#53B175"}]}>Singup</Text>
+                            <HStack style={{ justifyContent: "center", alignItems: "center", marginTop: 20 }}>
+                                <Text style={styles.sText}>Already have an account? </Text>
+                                <TouchableOpacity onPress={() => navigation.navigate("LoginPage")}>
+                                    <Text style={[styles.sText, { color: "#53B175" }]}>Login</Text>
                                 </TouchableOpacity>
                             </HStack>
                         </View>
@@ -53,10 +55,9 @@ const LoginPage: React.FC = () => {
                 </ImageBackground>
             </View>
         </NativeBaseProvider>
-
     )
 }
-export default LoginPage;
+export default SignUpPage;
 
 const styles = StyleSheet.create({
     container: {
