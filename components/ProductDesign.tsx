@@ -2,40 +2,51 @@ import React, { useState } from "react";
 import { View, StyleSheet, Text, TouchableOpacity, Image } from "react-native";
 import Layout from "../constants/Layout";
 import { HStack, VStack } from "native-base";
+import { useNavigation } from "@react-navigation/native";
+
 interface ProductDesignProps {
     productImage: any;
     productName: string;
     productInfo: string;
     productPrice: string;
+    navigation: any;
+    navigate: any;
 }
 export default function ProductDesign(props: ProductDesignProps) {
     return (
-        <View style={styles.main}>
-            <VStack>
-                <View style={styles.container}>
-                    <Image
-                        source={props.productImage}
-                        style={styles.prdct}
-                        alt=""
-                    />
-                </View>
-                <View style={styles.container}>
-                    <Text style={styles.pName}>{props.productName}</Text>
-                    <Text style={styles.pInfo}>{props.productInfo}</Text>
-                    <HStack style={{ justifyContent: "center", alignItems: "center", marginTop: 10 }}>
-                        <Text style={styles.pText}>{props.productPrice}</Text>
-                        <TouchableOpacity>
-                            <View style={styles.bttn}>
-                                <Image
-                                    source={require("../assets/icon/Vector.png")}
-                                    alt=""
-                                />
-                            </View>
-                        </TouchableOpacity>
-                    </HStack>
-                </View>
-            </VStack>
-        </View>
+        <TouchableOpacity
+            onPress={() => {
+                props.navigation.navigate(props.navigate);
+            }}
+        >
+            <View style={styles.main}>
+                <VStack>
+                    <View style={styles.container}>
+                        <Image
+                            source={props.productImage}
+                            style={styles.prdct}
+                            alt=""
+                        />
+                    </View>
+                    <View style={styles.container}>
+                        <Text style={styles.pName}>{props.productName}</Text>
+                        <Text style={styles.pInfo}>{props.productInfo}</Text>
+                        <HStack style={{ justifyContent: "center", alignItems: "center", marginTop: 10 }}>
+                            <Text style={styles.pText}>{props.productPrice}</Text>
+                            <TouchableOpacity>
+                                <View style={styles.bttn}>
+                                    <Image
+                                        source={require("../assets/icon/Vector.png")}
+                                        alt=""
+                                    />
+                                </View>
+                            </TouchableOpacity>
+                        </HStack>
+                    </View>
+                </VStack>
+            </View>
+        </TouchableOpacity>
+
     );
 };
 
@@ -84,6 +95,6 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: "#181725",
         fontWeight: "700",
-        width:70
+        width: 70
     }
 });

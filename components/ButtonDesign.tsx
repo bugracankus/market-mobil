@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
 import Layout from "../constants/Layout";
-import { useNavigation } from "@react-navigation/native";
 interface ButtonDesignProps {
     color:string,
     bttnText:string,

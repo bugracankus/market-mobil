@@ -12,6 +12,7 @@ import HomePage from '../screens/HomePage';
 import SignUpPage from '../screens/SignUpPage';
 import VerificationPage from '../screens/VerificationPage';
 import SelectLocationPage from '../screens/SelectLocationPage';
+import ProductDetailPage from '../screens/ProductDetailPage';
 
 
 
@@ -56,6 +57,10 @@ function MyStack() {
              <Stack.Screen
                 name="SelectLocationPage"
                 component={SelectLocationPage}
+            />
+             <Stack.Screen
+                name="ProductDetailPage"
+                component={ProductDetailPage}
             />
         </Stack.Navigator>
     );

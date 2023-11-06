@@ -47,25 +47,33 @@ const HomePage: React.FC = () => {
                                     productImage={require("../assets/products/product3.png")}
                                     productName={"Organic Bananas"}
                                     productInfo={"7pcs, Priceg"}
-                                    productPrice={"$4.99"}
+                                    productPrice={"$4.99"} 
+                                    navigation={navigation} 
+                                    navigate={"ProductDetailPage"}                                
+                                    />
+                                <ProductDesign
+                                    productImage={require("../assets/products/product2.png")}
+                                    productName={"Red Apple"}
+                                    productInfo={"1Kg, Priceg"}
+                                    productPrice={"$14.99"}
+                                    navigation={navigation} 
+                                    navigate={"ProductDetailPage"}        
                                 />
                                 <ProductDesign
                                     productImage={require("../assets/products/product2.png")}
                                     productName={"Red Apple"}
                                     productInfo={"1Kg, Priceg"}
                                     productPrice={"$14.99"}
+                                    navigation={navigation} 
+                                    navigate={"ProductDetailPage"}        
                                 />
                                 <ProductDesign
                                     productImage={require("../assets/products/product2.png")}
                                     productName={"Red Apple"}
                                     productInfo={"1Kg, Priceg"}
                                     productPrice={"$14.99"}
-                                />
-                                <ProductDesign
-                                    productImage={require("../assets/products/product2.png")}
-                                    productName={"Red Apple"}
-                                    productInfo={"1Kg, Priceg"}
-                                    productPrice={"$14.99"}
+                                    navigation={navigation} 
+                                    navigate={"ProductDetailPage"}        
                                 />
                             </HStack>
                         </ScrollView>
@@ -82,24 +90,32 @@ const HomePage: React.FC = () => {
                                     productName={"Organic Bananas"}
                                     productInfo={"7pcs, Priceg"}
                                     productPrice={"$4.99"}
+                                    navigation={navigation} 
+                                    navigate={"ProductDetailPage"}        
                                 />
                                 <ProductDesign
                                     productImage={require("../assets/products/product2.png")}
                                     productName={"Red Apple"}
                                     productInfo={"1Kg, Priceg"}
                                     productPrice={"$14.99"}
+                                    navigation={navigation} 
+                                    navigate={"ProductDetailPage"}        
                                 />
                                 <ProductDesign
                                     productImage={require("../assets/products/product2.png")}
                                     productName={"Red Apple"}
                                     productInfo={"1Kg, Priceg"}
                                     productPrice={"$14.99"}
+                                    navigation={navigation} 
+                                    navigate={"ProductDetailPage"}        
                                 />
                                 <ProductDesign
                                     productImage={require("../assets/products/product2.png")}
                                     productName={"Red Apple"}
                                     productInfo={"1Kg, Priceg"}
                                     productPrice={"$14.99"}
+                                    navigation={navigation} 
+                                    navigate={"ProductDetailPage"}        
                                 />
                             </HStack>
                         </ScrollView>
@@ -118,24 +134,32 @@ const HomePage: React.FC = () => {
                                         productName={"Organic Bananas"}
                                         productInfo={"7pcs, Priceg"}
                                         productPrice={"$4.99"}
+                                        navigation={navigation} 
+                                        navigate={"ProductDetailPage"}        
                                     />
                                     <ProductDesign
                                         productImage={require("../assets/products/product2.png")}
                                         productName={"Red Apple"}
                                         productInfo={"1Kg, Priceg"}
                                         productPrice={"$14.99"}
+                                        navigation={navigation} 
+                                        navigate={"ProductDetailPage"}        
                                     />
                                     <ProductDesign
                                         productImage={require("../assets/products/product2.png")}
                                         productName={"Red Apple"}
                                         productInfo={"1Kg, Priceg"}
                                         productPrice={"$14.99"}
+                                        navigation={navigation} 
+                                        navigate={"ProductDetailPage"}        
                                     />
                                     <ProductDesign
                                         productImage={require("../assets/products/product2.png")}
                                         productName={"Red Apple"}
                                         productInfo={"1Kg, Priceg"}
                                         productPrice={"$14.99"}
+                                        navigation={navigation} 
+                                        navigate={"ProductDetailPage"}        
                                     />
                                 </HStack>
                             </ScrollView>
