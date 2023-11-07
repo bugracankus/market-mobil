@@ -3,7 +3,6 @@ import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
 import Layout from "../constants/Layout";
 import { HStack, VStack } from "native-base";
 import { useNavigation } from "@react-navigation/native";
-
 const NavigationBar = () => {
     const navigation: any = useNavigation();
     return (
@@ -21,7 +20,7 @@ const NavigationBar = () => {
                         </VStack>
                     </View>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity  onPress={() => navigation.navigate("ExplorePage")}>
                     <View style={styles.bttn}>
                         <VStack style={{ justifyContent: "center", alignItems: "center" }}>
                             <Image
@@ -78,7 +77,7 @@ export default NavigationBar;
 //----STYLE-----
 const styles = StyleSheet.create({
     main: {
-        height: 70,
+        height: 90,
         width: Layout.window.width,
         borderTopLeftRadius: 15,
         borderTopRightRadius: 15,
@@ -95,8 +94,8 @@ const styles = StyleSheet.create({
         alignItems: "center"
     },
     icon: {
-        width: 30,
-        height: 30,
+        width: 25,
+        height: 25,
         resizeMode:"contain"
     },
     iText: {
