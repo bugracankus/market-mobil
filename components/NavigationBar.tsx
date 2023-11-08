@@ -8,7 +8,7 @@ const NavigationBar = () => {
     return (
         <View style={styles.main}>
             <HStack space={1}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate("HomePage")}>
                     <View style={styles.bttn}>
                         <VStack style={{ justifyContent: "center", alignItems: "center" }}>
                             <Image
@@ -32,7 +32,7 @@ const NavigationBar = () => {
                         </VStack>
                     </View>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate("MyCartPage")}>
                     <View style={styles.bttn}>
                         <VStack style={{ justifyContent: "center", alignItems: "center" }}>
                             <Image
@@ -44,7 +44,7 @@ const NavigationBar = () => {
                         </VStack>
                     </View>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate("FavoruritePage")}>
                     <View style={styles.bttn}>
                         <VStack style={{ justifyContent: "center", alignItems: "center" }}>
                             <Image
@@ -56,7 +56,7 @@ const NavigationBar = () => {
                         </VStack>
                     </View>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate("AccountPage")}>
                     <View style={styles.bttn}>
                         <VStack style={{ justifyContent: "center", alignItems: "center" }}>
                             <Image

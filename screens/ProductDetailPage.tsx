@@ -20,8 +20,6 @@ const ProductDetailPage: React.FC = () => {
                 <View style={styles.main}>
                     <ButtomBarDesign />
                     <View style={styles.iGround}>
-                        {/* <ProductListDesig/>   */}
-                        {/* // ! => ScrolList düzenlenecek  */}
                         <Image
                             source={require("../assets/products/product2.png")}
                             alt=""
@@ -91,8 +89,8 @@ const ProductDetailPage: React.FC = () => {
                             <ButtonDesign
                                 color={"#53B175"}
                                 bttnText={"Add To Basket"}
-                                navigation={undefined}
-                                navigate={undefined}
+                                navigation={navigation}
+                                navigate={"MyCartPage"}
                             />
                         </View>
                     </View>

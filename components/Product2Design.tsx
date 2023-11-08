@@ -9,23 +9,30 @@ interface Product2DesignProps {
     borderColor: any;
     productImage: any;
     prodcutName: string;
+    navigation: any;
+    navigate: any;
 }
 export default function Product2Design(props: Product2DesignProps) {
     return (
-        <View style={[styles.main, { backgroundColor: props.backgroundColor, borderColor: props.borderColor }]}>
-            <View style={{ position: "absolute" }}>
-                <VStack style={{ justifyContent: "center", alignItems: "center", marginTop: 10 }}>
-                    <View >
-                        <Image
-                            source={props.productImage}
-                            style={styles.img}
-                            alt=""
-                        />
-                    </View>
-                    <Text style={styles.prdctName}>{props.prodcutName}</Text>
-                </VStack>
+        <TouchableOpacity onPress={() => {
+            props.navigation.navigate(props.navigate);
+        }}>
+            <View style={[styles.main, { backgroundColor: props.backgroundColor, borderColor: props.borderColor }]}>
+                <View style={{ position: "absolute" }}>
+                    <VStack style={{ justifyContent: "center", alignItems: "center", marginTop: 10 }}>
+                        <View >
+                            <Image
+                                source={props.productImage}
+                                style={styles.img}
+                                alt=""
+                            />
+                        </View>
+                        <Text style={styles.prdctName}>{props.prodcutName}</Text>
+                    </VStack>
+                </View>
             </View>
-        </View>
+        </TouchableOpacity>
+
     );
 };
 

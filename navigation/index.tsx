@@ -14,6 +14,10 @@ import VerificationPage from '../screens/VerificationPage';
 import SelectLocationPage from '../screens/SelectLocationPage';
 import ProductDetailPage from '../screens/ProductDetailPage';
 import ExplorePage from '../screens/ExplorePage';
+import ProductDiscovered from '../screens/ProductDiscovered';
+import MyCartPage from '../screens/MyCartPage';
+import FavoruritePage from '../screens/FavoruritePage';
+import AccountPage from '../screens/AccountPage';
 
 
 
@@ -35,38 +39,55 @@ function MyStack() {
                 name="OnbordingPage"
                 component={OnbordingPage}
             />
-               <Stack.Screen
+            <Stack.Screen
                 name="SignInPage"
                 component={SignInPage}
             />
-             <Stack.Screen
+            <Stack.Screen
                 name="NumberPage"
                 component={NumberPage}
             />
-             <Stack.Screen
+            <Stack.Screen
                 name="HomePage"
                 component={HomePage}
             />
-             <Stack.Screen
+            <Stack.Screen
                 name="SignUpPage"
                 component={SignUpPage}
             />
-             <Stack.Screen
+            <Stack.Screen
                 name="VerificationPage"
                 component={VerificationPage}
             />
-             <Stack.Screen
+            <Stack.Screen
                 name="SelectLocationPage"
                 component={SelectLocationPage}
             />
-             <Stack.Screen
+            <Stack.Screen
                 name="ProductDetailPage"
                 component={ProductDetailPage}
             />
-             <Stack.Screen
+            <Stack.Screen
                 name="ExplorePage"
                 component={ExplorePage}
             />
+            <Stack.Screen
+                name="ProductDiscovered"
+                component={ProductDiscovered}
+            />
+            <Stack.Screen
+                name="MyCartPage"
+                component={MyCartPage}
+            />
+                 <Stack.Screen
+                name="FavoruritePage"
+                component={FavoruritePage}
+            />
+                   <Stack.Screen
+                name="AccountPage"
+                component={AccountPage}
+            />
+
         </Stack.Navigator>
     );
 }

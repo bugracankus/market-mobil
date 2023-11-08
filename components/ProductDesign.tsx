@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: "#181725",
         fontWeight: "600",
-        alignSelf: "center"
+        marginLeft:10
     },
     pInfo: {
         fontSize: 16,

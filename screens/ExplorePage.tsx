@@ -28,13 +28,16 @@ const ExplorePage: React.FC = () => {
                                     backgroundColor={"rgba(83, 177, 117, 0.10)"}
                                     borderColor={"rgba(83, 177, 117, 0.70)"}
                                     productImage={require("../assets/products/product10.png")}
-                                    prodcutName={"Frash Fruits & Vegetable"}
-                                />
+                                    prodcutName={"Frash Fruits & Vegetable"} 
+                                    navigation={navigation} 
+                                    navigate={"ProductDiscovered"}                                />
                                 <Product2Design
                                     backgroundColor={"rgba(248, 164, 76, 0.10)"}
                                     borderColor={"rgba(248, 164, 76, 0.70)"}
                                     productImage={require("../assets/products/product5.png")}
                                     prodcutName={"Cooking Oil & Ghee"}
+                                    navigation={navigation} 
+                                    navigate={"ProductDiscovered"}   
                                 />
                             </HStack>
                             <HStack space={6}>
@@ -43,12 +46,16 @@ const ExplorePage: React.FC = () => {
                                     borderColor={"#F7A593"}
                                     productImage={require("../assets/products/product9.png")}
                                     prodcutName={"Meat & Fish"}
+                                    navigation={navigation} 
+                                    navigate={"ProductDiscovered"}   
                                 />
                                 <Product2Design
                                     backgroundColor={"rgba(211, 176, 224, 0.25)"}
                                     borderColor={"#D3B0E0"}
                                     productImage={require("../assets/products/product8.png")}
                                     prodcutName={"Bakery & Snacks"}
+                                    navigation={navigation} 
+                                    navigate={"ProductDiscovered"}   
                                 />
                             </HStack>
                             <HStack space={6} style={{ marginBottom: 50 }}>
@@ -57,12 +64,16 @@ const ExplorePage: React.FC = () => {
                                     borderColor={"#FDE598"}
                                     productImage={require("../assets/products/product6.png")}
                                     prodcutName={"Dairy & Eggs"}
+                                    navigation={navigation} 
+                                    navigate={"ProductDiscovered"}   
                                 />
                                 <Product2Design
                                     backgroundColor={"rgba(211, 176, 224, 0.25)"}
                                     borderColor={"#D3B0E0"}
                                     productImage={require("../assets/products/product7.png")}
                                     prodcutName={"Beverages"}
+                                    navigation={navigation} 
+                                    navigate={"ProductDiscovered"}   
                                 />
                             </HStack>
                         </VStack>
